@@ -44,6 +44,7 @@ header ul {
 }
 
 header li {
+  list-style: none;
   position: relative;
   cursor: pointer;
   transition: color 0.3s;
