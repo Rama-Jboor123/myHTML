@@ -40,16 +40,18 @@ header ul {
   list-style: none;
   display: flex;
   gap: 30px;
+  color: rgb(95, 5, 95);
 }
 
 header li {
   position: relative;
   cursor: pointer;
   transition: color 0.3s;
+  color: rgb(95, 5, 95);
 }
 
 header li:hover {
-  color: rgb(95, 5, 95);
+  list-style: list-item;
 }
 
 header li::after {
