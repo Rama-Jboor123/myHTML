@@ -222,6 +222,9 @@ article {
   opacity: 1;
   transform: translateY(0);
 }
+.skills:hover h2 {
+  margin-top: 50px;;
+}
 
 .skills ul button {
   background-color: rgb(95, 5, 95);
@@ -311,6 +314,7 @@ article {
 /* FOOTER */
 footer {
   background: linear-gradient(90deg, rgb(95, 5, 95), black);
+  width:100%;
   color: white;
   text-align: center;
   padding: 25px;
@@ -344,8 +348,106 @@ footer {
   }
 
   .skills h2 {
-    margin-bottom: 60px;
+    margin:auto;
   }
 
 }
 
+.education-section {
+  padding: 100px 10%;
+  background: black;
+  color: #fff;
+  position: relative;
+}
+
+.education-section .section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  color: var(--primary-color, rgb(95, 5, 95));
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--primary-color, rgb(95, 5, 95));
+  border-radius: 3px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-color, rgb(95, 5, 95));
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(102, 252, 241, 0.7);
+}
+
+.timeline-content {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  margin-left: 50px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.timeline-content h3 {
+  color: var(--primary-color, rgb(95, 5, 95));
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.timeline-content h4 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.timeline-content h4 span {
+  font-size: 0.9rem;
+  color: #9eaeb7;
+  font-style: italic;
+}
+
+.timeline-content p {
+  color: #c5c6c7;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-content {
+    margin-left: 35px;
+    padding: 1rem 1.2rem;
+  }
+}
