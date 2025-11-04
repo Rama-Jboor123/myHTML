@@ -52,7 +52,7 @@ header li {
 }
 
 header li:hover {
-  list-style: list-item;
+ color: rgb(95, 5, 95);
 }
 
 header li::after {
