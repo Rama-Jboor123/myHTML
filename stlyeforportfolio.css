@@ -36,39 +36,48 @@ header h1::before {
   height: 30px;
 }
 
-header ul {
-  list-style: none;
+#home ul  {
+  list-style:none ;
   display: flex;
-  gap: 30px;
+  justify-content: center;
+  gap: 25px;
   color: rgb(95, 5, 95);
+  text-decoration: none;
 }
-
-header li {
-  list-style: none;
-  position: relative;
+button {
+  background-color: transparent;
+  border: 2px solid rgb(95, 5, 95);
+  color: rgb(95, 5, 95);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 16px;
   cursor: pointer;
-  transition: color 0.3s;
-  color: rgb(95, 5, 95);
+  transition: all 0.3s ease;
 }
 
-header li:hover {
- color: rgb(95, 5, 95);
-}
-
-header li::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0;
-  height: 2px;
+button:hover {
   background-color: rgb(95, 5, 95);
-  transition: width 0.3s;
+  color: black;
+  transform: scale(1.05);
 }
 
-header li:hover::after {
-  width: 100%;
+.nav-list li {
+    text-decoration: none;
 }
+.nav-list li {
+
+  font-size: 18px;
+  cursor: pointer;
+  transition: text-decoration 0.3s;
+}
+
+.nav-list li:hover {
+  text-decoration: underline;
+}
+
+
+
+
 
 /* ARTICLE */
 article {
